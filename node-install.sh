@@ -23,6 +23,6 @@ chmod +x /usr/local/bin/docker-compose
 sh -c "curl -L https://raw.githubusercontent.com/docker/compose/$VERSION_NUM/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose"
 
 # Install docker-compose.yml (Compose file reference)
-mkdir my-node
-curl -o my-node/docker-compose.yml https://raw.githubusercontent.com/netbolt/docker-compose/master/docker-compose.yml
-chmod u+x my-node/docker-compose.yml
+mkdir my-livelygig
+curl -o my-node/docker-compose.yml https://raw.githubusercontent.com/netbolt/LivelyGig/master/docker-compose.yml
+chmod u+x my-livelygig/docker-compose.yml
