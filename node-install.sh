@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # masternodes@yahoo.com
-# Synereo node install
+# Synereo LivelyGig node install
 # Run command as root at login (Use sudo if you login as user)
-# curl -s https://raw.githubusercontent.com/netbolt/synereo-node/master/node-install.sh | bash /dev/stdin
+# curl -s https://raw.githubusercontent.com/netbolt/LivelyGig/master/node-install.sh | bash /dev/stdin
 
 # Set docker-compose version
 VERSION_NUM=1.6.0
