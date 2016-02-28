@@ -24,5 +24,5 @@ sh -c "curl -L https://raw.githubusercontent.com/docker/compose/$VERSION_NUM/con
 
 # Install docker-compose.yml (Compose file reference)
 mkdir my-livelygig
-curl -o my-node/docker-compose.yml https://raw.githubusercontent.com/netbolt/LivelyGig/master/docker-compose.yml
+curl -o my-livelygig/docker-compose.yml https://raw.githubusercontent.com/netbolt/LivelyGig/master/docker-compose.yml
 chmod u+x my-livelygig/docker-compose.yml
