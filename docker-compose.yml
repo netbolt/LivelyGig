@@ -1,0 +1,36 @@
+# $ cd my-node
+# $ docker-compose run synereo
+
+
+rabbitmq:
+  image: rabbitmq
+  environment:
+  - RABBITMQ_DEFAULT_VHOST=synereo
+  - RABBITMQ_DEFAULT_USER=synereo
+  - RABBITMQ_DEFAULT_PASS=SYNEREO
+  - RABBIT_ERLANG_COOKIE='s3cr3t'
+  ports:
+    - "5672:5672"
+
+mongodb:
+  image: mongo
+#  environment:
+#  - MONGODB_USER=
+#  - MONGODB_PASSWORD=
+#  - MONGODB_DATABASE=
+#  - storageEngine=
+  ports:
+    - "27017:27017"
+#  command: mongod --smallfiles
+
+synereo:
+  image: synereo/synereo
+  
+#  working_dir:
+#  volumes:  
+#  command: 
+#  ports:   
+    
+  links:
+   - rabbitmq
+   - mongodb
