@@ -1,5 +1,5 @@
-# $ cd my-node
-# $ docker-compose run synereo
+# $ cd my-livelygig
+# $ docker-compose run livelygig
 
 
 rabbitmq:
@@ -24,7 +24,7 @@ mongodb:
 #  command: mongod --smallfiles
 
 synereo:
-  image: synereo/synereo
+  image: netbolt/livelygig
   
 #  working_dir:
 #  volumes:  
